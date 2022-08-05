@@ -81,7 +81,6 @@ body {
   .navbar img {
     width: 60px;
     height: auto;
-    margin-left: 20px;
   }
   .menu {
     display: flex;
@@ -90,7 +89,7 @@ body {
   .navbar svg {
     transform: scale(2);
   }
-  #about {
-    margin-top: 80px;
+  .section {
+    padding-top: 80px;
   }
 }
