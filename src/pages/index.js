@@ -1,9 +1,17 @@
-import About from "./About";
-import Projects from "./Projects";
-import Work from "./Work";
-import Education from "./Education";
+import React from "react";
+import { About, Projects, Work, Education } from "../sections";
+import Navbar from "../component/Navbar";
 
-export { About };
-export { Projects };
-export { Work };
-export { Education };
+const Main = () => {
+  return (
+    <div>
+      <Navbar />
+      <About />
+      <Projects />
+      <Work />
+      <Education />
+    </div>
+  );
+};
+
+export default Main;

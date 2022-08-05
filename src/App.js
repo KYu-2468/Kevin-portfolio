@@ -1,15 +1,10 @@
 import "./App.css";
-import { About, Projects, Work, Education } from "./pages";
-import Navbar from "./component/Navbar";
+import Main from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <About />
-      <Projects />
-      <Work />
-      <Education />
+      <Main />
     </div>
   );
 }

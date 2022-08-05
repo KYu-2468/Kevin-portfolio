@@ -7,11 +7,21 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
+import SchoolIcon from "@mui/icons-material/School";
+import AppsIcon from "@mui/icons-material/Apps";
 
 const Menu = () => {
+  const anchor = "top";
+  const icons = [
+    <AccountCircleIcon />,
+    <AppsIcon />,
+    <WorkHistoryIcon />,
+    <SchoolIcon />,
+  ];
+
   const [state, setState] = useState({
     top: false,
     left: false,
@@ -45,9 +55,7 @@ const Menu = () => {
               style={{ flexGrow: 1, textDecoration: "none" }}
             >
               <ListItemButton>
-                <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                </ListItemIcon>
+                <ListItemIcon>{icons[index]}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItemButton>
             </a>
@@ -56,8 +64,6 @@ const Menu = () => {
       </List>
     </Box>
   );
-
-  const anchor = "top";
 
   return (
     <div className="menu">
