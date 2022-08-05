@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: red;
+  border: solid;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 7px;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+}
