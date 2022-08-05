@@ -65,16 +65,27 @@ body {
     color: white;
   }
   .navbar {
-    justify-content: space-between;
     position: fixed;
     align-items: center;
     top: 0px;
     width: 100vw;
     background-color: #282c34;
   }
+  .navbar div {
+    flex-grow: 1;
+  }
+  .logo {
+    display: flex;
+    margin: 10px;
+  }
   .navbar img {
     width: 60px;
     height: auto;
+    margin-left: 20px;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
   }
   .navbar svg {
     transform: scale(2);

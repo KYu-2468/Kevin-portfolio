@@ -20,11 +20,11 @@ const Navbar = () => {
     );
   } else {
     return (
-      <div>
-        <div className="navbar">
+      <div className="navbar">
+        <div className="logo">
           <img src={kevinImg} alt="Kevin" />
-          <Menu />
         </div>
+        <Menu />
       </div>
     );
   }
