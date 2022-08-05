@@ -7,7 +7,7 @@ const Education = () => {
   const fullstackDes =
     "Fullstack Academy is an immersive web development bootcamp with campuses in New York City, Chicago, and online.";
   const googleDataDes =
-    "Prepare for a new career in the high-growth field of data analytics, no experience or degree required. Get professional training designed by Google and have the opportunity to connect with top employers.";
+    "Get professional training designed by Google and have the opportunity to connect with top employers.";
 
   return (
     <div id="education" className="section">
