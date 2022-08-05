@@ -1,7 +1,9 @@
-import Home from "./Home";
 import About from "./About";
-import Portfolios from "./Portfolios";
+import Projects from "./Projects";
+import Work from "./Work";
+import Education from "./Education";
 
-export { Home };
 export { About };
-export { Portfolios };
+export { Projects };
+export { Work };
+export { Education };
