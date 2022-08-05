@@ -91,5 +91,12 @@ body {
   }
   .section {
     padding-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .school {
+    width: 80%;
+    margin-bottom: 30px;
   }
 }
