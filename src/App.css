@@ -36,3 +36,60 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar a {
+  color: red;
+  border: solid;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 7px;
+  font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: #1f1d36;
+    color: white;
+  }
+  .navbar {
+    position: fixed;
+    align-items: center;
+    top: 0px;
+    width: 100vw;
+    background-color: #282c34;
+  }
+  .navbar div {
+    flex-grow: 1;
+  }
+  .logo {
+    display: flex;
+    margin: 10px;
+  }
+  .navbar img {
+    width: 60px;
+    height: auto;
+  }
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navbar svg {
+    transform: scale(2);
+  }
+  .section {
+    padding-top: 80px;
+  }
+}
