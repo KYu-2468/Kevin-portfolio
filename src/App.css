@@ -90,7 +90,7 @@ body {
     transform: scale(2);
   }
   .section {
-    padding-top: 80px;
+    padding-top: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -98,5 +98,18 @@ body {
   .school {
     width: 80%;
     margin-bottom: 30px;
+  }
+  .experience {
+    width: 90%;
+    text-align: left;
+  }
+  .experience ul {
+    list-style-type: none;
+  }
+  .experience li {
+    margin: 15px;
+  }
+  .experience hr {
+    border-top: 3px solid #bbb;
   }
 }
