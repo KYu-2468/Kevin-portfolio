@@ -70,6 +70,7 @@ body {
     top: 0px;
     width: 100vw;
     background-color: #282c34;
+    z-index: 99;
   }
   .navbar div {
     flex-grow: 1;
