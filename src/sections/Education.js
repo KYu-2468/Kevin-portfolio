@@ -12,7 +12,7 @@ const Education = () => {
 
   return (
     <div id="education" className="section">
-      <Zoom className="schoolt">
+      <Zoom>
         <h1>Education:</h1>
         <School
           school="Fullstack Academy"
