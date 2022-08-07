@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 
 const School = ({ school, description, image }) => {
   return (
-    // <Card sx={{ width: window.innerWidth > 500 ? 345 : "80%" }}>
     <Card className="school">
       <CardMedia component="img" height="auto" image={image} alt={school} />
       <CardContent>

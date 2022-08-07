@@ -12,14 +12,14 @@ const Work = () => {
     },
     {
       company: "Fullstack Academy",
-      role: "Software Engineer in training",
+      role: "SWE in training",
       startDate: "Mar 2022",
       endDate: "Jul 2022",
       jobDescription: [""],
     },
     {
       company: "SGS",
-      role: "Wireless 4G/5G RF Test Technician",
+      role: "Wireless Test Technician",
       startDate: "Jun 2017",
       endDate: "Jul 2022",
       jobDescription: [
@@ -30,7 +30,7 @@ const Work = () => {
     },
     {
       company: "SGS",
-      role: "Software Enigneer Intern",
+      role: "SWE Intern",
       startDate: "Jan 2019",
       endDate: "Aug 2020",
       jobDescription: [
