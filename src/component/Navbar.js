@@ -15,6 +15,9 @@ const Navbar = () => {
   if (width > 500) {
     return (
       <div className="navbar">
+        <div className="logo">
+          <img src={kevinImg} alt="Kevin" />
+        </div>
         <Menu />
       </div>
     );
