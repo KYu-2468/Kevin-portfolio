@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Kevin-portfolio/static/css/main.768f2995.css",
-    "main.js": "/Kevin-portfolio/static/js/main.d95487f7.js",
+    "main.css": "/Kevin-portfolio/static/css/main.f2c791ae.css",
+    "main.js": "/Kevin-portfolio/static/js/main.eb18cc17.js",
     "static/js/787.b62e4628.chunk.js": "/Kevin-portfolio/static/js/787.b62e4628.chunk.js",
     "static/media/ToyShop.png": "/Kevin-portfolio/static/media/ToyShop.931727e3a689e3215c44.png",
     "static/media/GoogleDataCert.png": "/Kevin-portfolio/static/media/GoogleDataCert.cf2fad22e159b539f773.png",
     "static/media/FullstackCert.png": "/Kevin-portfolio/static/media/FullstackCert.64d06358c2240b61d407.png",
     "static/media/KevinYu.png": "/Kevin-portfolio/static/media/KevinYu.d44906e0819890779697.png",
     "index.html": "/Kevin-portfolio/index.html",
-    "main.768f2995.css.map": "/Kevin-portfolio/static/css/main.768f2995.css.map",
-    "main.d95487f7.js.map": "/Kevin-portfolio/static/js/main.d95487f7.js.map",
+    "main.f2c791ae.css.map": "/Kevin-portfolio/static/css/main.f2c791ae.css.map",
+    "main.eb18cc17.js.map": "/Kevin-portfolio/static/js/main.eb18cc17.js.map",
     "787.b62e4628.chunk.js.map": "/Kevin-portfolio/static/js/787.b62e4628.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.768f2995.css",
-    "static/js/main.d95487f7.js"
+    "static/css/main.f2c791ae.css",
+    "static/js/main.eb18cc17.js"
   ]
 }
