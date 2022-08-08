@@ -55,16 +55,14 @@ const About = () => {
         </div>
         <Bounce left delay={4000}>
           <Shake delay={5000}>
-            <p>A software engineer</p>
+            <p className="title">A software engineer</p>
           </Shake>
         </Bounce>
-        <Flip delay={6000}>
-          <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
-            I enjoy building fun and interactive apps to connect businesses with
-            customers. I'm experienced in frontend and backend development. Let
-            me help you build your next product.
-          </p>
-        </Flip>
+        <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
+          I enjoy building fun and interactive apps to connect businesses with
+          customers. I'm experienced in frontend and backend development. Let me
+          help you build your next product.
+        </p>
       </div>
     </div>
   );
