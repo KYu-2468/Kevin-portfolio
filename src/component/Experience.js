@@ -44,7 +44,8 @@ const Row = ({ job }) => {
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
-          {job.company} {<br />} {job.role}
+          <p style={{ fontWeight: "bold", fontSize: "20px" }}>{job.company}</p>
+          <p>{job.role}</p>
         </TableCell>
       </TableRow>
       <TableRow>

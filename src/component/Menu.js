@@ -42,21 +42,23 @@ const Menu = () => {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: "auto" }}
+      sx={{ width: "auto", backgroundColor: "black" }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["About", "Projects", "Work", "Education"].map((text, index) => (
+        {["About", "Projects", "Experience", "Education"].map((text, index) => (
           <ListItem key={text} disablePadding style={{ display: "flex" }}>
             <a
               href={`#${text.toLowerCase()}`}
               style={{ flexGrow: 1, textDecoration: "none" }}
             >
               <ListItemButton>
-                <ListItemIcon>{icons[index]}</ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemIcon style={{ color: "white" }}>
+                  {icons[index]}
+                </ListItemIcon>
+                <ListItemText style={{ color: "white" }} primary={text} />
               </ListItemButton>
             </a>
           </ListItem>
@@ -69,7 +71,7 @@ const Menu = () => {
     <div className="menu">
       <React.Fragment key={anchor}>
         <Button onClick={toggleDrawer(anchor, true)}>
-          <MenuIcon />
+          <MenuIcon style={{ color: "#C5C6D0" }} />
         </Button>
         <Drawer
           anchor={anchor}

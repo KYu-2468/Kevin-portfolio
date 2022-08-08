@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "../component/Project";
 import toyShop from "../assets/images/ToyShop.png";
+import { Zoom } from "react-reveal";
 
 const Projects = () => {
   const projects = [
@@ -12,12 +13,15 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="section">
-      <h1>Projects:</h1>
-      <div>
-        {projects.map((project) => (
-          <Project key={project.name} project={project} />
-        ))}
+    <div id="projects">
+      <div className="section projects">
+        <Zoom>
+          <h1>Projects:</h1>
+
+          {projects.map((project) => (
+            <Project key={project.name} project={project} />
+          ))}
+        </Zoom>
       </div>
     </div>
   );

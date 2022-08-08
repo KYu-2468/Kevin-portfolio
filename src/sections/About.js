@@ -41,23 +41,24 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="section">
-      <div className="intro">
+    <div id="about">
+      <div className="section intro">
         <p>{greet}</p>
-        <p style={{ textIndent: "20px" }}>{intro}</p>
-
+        <p>{intro}</p>
         <div>
           <Zoom delay={3000}>
             <div>
-              <p className="glow">Kevin</p>
+              <p className="glow">KEVIN</p>
             </div>
           </Zoom>
         </div>
-        <Bounce left delay={4000}>
-          <Shake delay={5000}>
-            <p className="title">A software engineer</p>
-          </Shake>
-        </Bounce>
+        {/* <Bounce left delay={4000}> */}
+        <Shake delay={5000}>
+          <p className="title" style={{ textAlign: "center" }}>
+            Software Engineer
+          </p>
+        </Shake>
+        {/* </Bounce> */}
         <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
           I enjoy building fun and interactive apps to connect businesses with
           customers. I'm experienced in frontend and backend development. Let me

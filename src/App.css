@@ -37,6 +37,86 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#about {
+  padding-top: 25px;
+}
+
+.section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.projects,
+.education {
+  background-color: #313638;
+}
+
+.logo {
+  display: flex;
+  margin: 5px;
+}
+.navbar img {
+  width: 40px;
+  height: auto;
+}
+
+.intro > p {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.5rem;
+}
+
+.glow {
+  line-height: 1rem;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experience {
+  width: 90%;
+}
+.experience th,
+.experience td {
+  color: black;
+}
+.experience ul {
+  list-style-type: none;
+}
+.experience li {
+  margin-bottom: 15px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -51,19 +131,10 @@
   font-size: 1.5rem;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: yellow;
+@media only screen and (min-width: 501px) {
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    background-color: #1f1d36;
-    color: white;
-  }
   .navbar {
     position: fixed;
     align-items: center;
@@ -75,14 +146,7 @@ body {
   .navbar div {
     flex-grow: 1;
   }
-  .logo {
-    display: flex;
-    margin: 10px;
-  }
-  .navbar img {
-    width: 60px;
-    height: auto;
-  }
+
   .menu {
     display: flex;
     justify-content: flex-end;
@@ -90,62 +154,19 @@ body {
   .navbar svg {
     transform: scale(2);
   }
-  .section {
-    padding-top: 70px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+  .projects > div > div {
+    width: 90%;
   }
+  .project {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .school {
     width: 80%;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .experience {
-    width: 90%;
-    text-align: left;
-  }
-  .experience table {
-    background-color: #1976d2;
-  }
-  .experience th,
-  .experience td {
-    color: white;
-  }
-  .experience ul {
-    list-style-type: none;
-  }
-  .experience li {
-    margin: 15px;
-  }
-  .intro > p {
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 1.5rem;
-  }
-  .title {
-    color: #00ff00;
-    font-size: 20px;
-  }
-
-  .glow {
-    line-height: 1rem;
-    font-size: 50px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-        0 0 50px #ff4da6;
-    }
   }
 }
