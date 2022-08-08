@@ -42,7 +42,7 @@ const Menu = () => {
 
   const list = (anchor) => (
     <Box
-      sx={{ width: "auto" }}
+      sx={{ width: "auto", backgroundColor: "black" }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -55,8 +55,10 @@ const Menu = () => {
               style={{ flexGrow: 1, textDecoration: "none" }}
             >
               <ListItemButton>
-                <ListItemIcon>{icons[index]}</ListItemIcon>
-                <ListItemText primary={text} />
+                <ListItemIcon style={{ color: "white" }}>
+                  {icons[index]}
+                </ListItemIcon>
+                <ListItemText style={{ color: "white" }} primary={text} />
               </ListItemButton>
             </a>
           </ListItem>
