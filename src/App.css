@@ -103,8 +103,11 @@ body {
   font-weight: bold;
 }
 
-.experience {
+.experience > div {
   width: 90%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 .experience th,
 .experience td {

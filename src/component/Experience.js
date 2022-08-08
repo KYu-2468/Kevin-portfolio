@@ -13,7 +13,7 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import ExperienceDetail from "./ExperienceDetail";
 
 const Experience = ({ jobs }) => (
-  <div className="experience">
+  <>
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
         <TableBody>
@@ -23,7 +23,7 @@ const Experience = ({ jobs }) => (
         </TableBody>
       </Table>
     </TableContainer>
-  </div>
+  </>
 );
 
 export default Experience;
