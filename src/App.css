@@ -132,15 +132,7 @@ body {
 .navbar {
   display: flex;
   justify-content: space-evenly;
-}
-
-.navbar a {
-  color: red;
-  border: solid;
-  text-decoration: none;
-  margin-top: 10px;
-  padding: 7px;
-  font-size: 1.5rem;
+  align-items: center;
 }
 
 .school {
@@ -152,6 +144,12 @@ body {
 }
 
 @media only screen and (min-width: 601px) {
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
   .education > div {
     display: flex;
     margin: 25px;
