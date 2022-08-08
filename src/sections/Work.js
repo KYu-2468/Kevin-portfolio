@@ -5,21 +5,21 @@ const Work = () => {
   const jobs = [
     {
       company: "Freelance",
-      title: "Software Engineer",
+      role: "Software Engineer",
       startDate: "Aug 2022",
       endDate: "Present",
       jobDescription: [""],
     },
     {
       company: "Fullstack Academy",
-      title: "Software Engineer in training",
+      role: "SWE in training",
       startDate: "Mar 2022",
       endDate: "Jul 2022",
       jobDescription: [""],
     },
     {
       company: "SGS",
-      title: "Wireless 4G/5G RF Test Technician",
+      role: "Wireless Test Technician",
       startDate: "Jun 2017",
       endDate: "Jul 2022",
       jobDescription: [
@@ -30,7 +30,7 @@ const Work = () => {
     },
     {
       company: "SGS",
-      title: "Software Enigneer Intern",
+      role: "SWE Intern",
       startDate: "Jan 2019",
       endDate: "Aug 2020",
       jobDescription: [
@@ -42,7 +42,7 @@ const Work = () => {
     },
     {
       company: "SGS",
-      title: "Wireless Test Intern",
+      role: "Wireless Test Intern",
       startDate: "Jun 2017",
       endDate: "Jan 2019",
       jobDescription: [
@@ -52,7 +52,7 @@ const Work = () => {
     },
     {
       company: "Souplantation",
-      title: "Cashier",
+      role: "Cashier",
       startDate: "Jan 2019",
       endDate: "Mar 2020",
       jobDescription: [
@@ -66,16 +66,7 @@ const Work = () => {
   return (
     <div id="work" className="section">
       <h1>Experiences:</h1>
-      {jobs.map((job, index) => (
-        <Experience
-          key={index}
-          company={job.company}
-          title={job.title}
-          startDate={job.startDate}
-          endDate={job.endDate}
-          jobDescription={job.jobDescription}
-        />
-      ))}
+      <Experience jobs={jobs} />
     </div>
   );
 };

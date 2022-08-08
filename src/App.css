@@ -70,6 +70,7 @@ body {
     top: 0px;
     width: 100vw;
     background-color: #282c34;
+    z-index: 99;
   }
   .navbar div {
     flex-grow: 1;
@@ -98,10 +99,19 @@ body {
   .school {
     width: 80%;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .experience {
     width: 90%;
     text-align: left;
+  }
+  .experience table {
+    background-color: #1976d2;
+  }
+  .experience th,
+  .experience td {
+    color: white;
   }
   .experience ul {
     list-style-type: none;
@@ -109,7 +119,33 @@ body {
   .experience li {
     margin: 15px;
   }
-  .experience hr {
-    border-top: 3px solid #bbb;
+  .intro > p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5rem;
+  }
+  .title {
+    color: #00ff00;
+    font-size: 20px;
+  }
+
+  .glow {
+    line-height: 1rem;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6;
+    }
   }
 }
