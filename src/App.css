@@ -37,6 +37,77 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#about {
+  padding-top: 25px;
+}
+
+.section {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.projects,
+.education {
+  background-color: #313638;
+}
+
+.intro > p {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 1.5rem;
+}
+
+.glow {
+  line-height: 1rem;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+      0 0 40px #e60073, 0 0 50px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #ff4da6;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.experience {
+  width: 90%;
+}
+.experience th,
+.experience td {
+  color: black;
+}
+.experience ul {
+  list-style-type: none;
+}
+.experience li {
+  margin-bottom: 15px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -50,34 +121,7 @@
   padding: 7px;
   font-size: 1.5rem;
 }
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: black;
-  color: white;
-  font-family: "Times New Roman", Times, serif;
-}
 @media only screen and (max-width: 500px) {
-  #education,
-  #about,
-  #experience,
-  #projects {
-    padding-top: 25px;
-  }
-  .section {
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 25px;
-  }
-
-  .projects,
-  .education {
-    background-color: #313638;
-  }
-
   .navbar {
     position: fixed;
     align-items: center;
@@ -105,37 +149,8 @@ body {
     transform: scale(2);
   }
 
-  .intro > p {
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    line-height: 1.5rem;
-  }
-  .glow {
-    line-height: 1rem;
-    font-size: 40px;
-    color: #fff;
-    text-align: center;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
-        0 0 40px #e60073, 0 0 50px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-        0 0 50px #ff4da6;
-    }
-  }
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-
   .projects > div {
     width: 90%;
-    margin: 15px;
   }
   .project {
     margin-left: auto;
@@ -143,24 +158,6 @@ body {
   }
   .project p {
     word-wrap: normal;
-  }
-
-  .experience {
-    width: 90%;
-    /* text-align: left; */
-  }
-  .experience table {
-    background-color: #1976d2;
-  }
-  .experience th,
-  .experience td {
-    color: white;
-  }
-  .experience ul {
-    list-style-type: none;
-  }
-  .experience li {
-    margin: 15px;
   }
 
   .school {

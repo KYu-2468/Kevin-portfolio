@@ -48,7 +48,7 @@ const Menu = () => {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["About", "Projects", "Work", "Education"].map((text, index) => (
+        {["About", "Projects", "Experience", "Education"].map((text, index) => (
           <ListItem key={text} disablePadding style={{ display: "flex" }}>
             <a
               href={`#${text.toLowerCase()}`}

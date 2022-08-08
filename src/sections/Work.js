@@ -12,7 +12,7 @@ const Work = () => {
     },
     {
       company: "Fullstack Academy",
-      role: "SWE in training",
+      role: "Software Engineer in training",
       startDate: "Mar 2022",
       endDate: "Jul 2022",
       jobDescription: [""],
