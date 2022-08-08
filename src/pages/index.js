@@ -4,13 +4,13 @@ import Navbar from "../component/Navbar";
 
 const Main = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <About />
       <Projects />
       <Work />
       <Education />
-    </div>
+    </>
   );
 };
 

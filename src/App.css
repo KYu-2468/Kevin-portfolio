@@ -119,41 +119,32 @@ body {
   .experience li {
     margin: 15px;
   }
-
-  .name {
-    font-size: 30px;
-    text-align: center;
+  .intro > p {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.5rem;
   }
-
-  .typewriter {
+  .neonText {
     color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  }
+  .glow {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
-  /* The typing effect */
-  @keyframes typing {
+  @keyframes glow {
     from {
-      width: 0;
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073,
+        0 0 40px #e60073, 0 0 50px #e60073;
     }
     to {
-      width: 100%;
-    }
-  }
-
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+        0 0 50px #ff4da6;
     }
   }
 }
