@@ -14,11 +14,13 @@ const card = (job) => (
         {job.startDate} - {job.endDate}
       </Typography>
       {job.jobDescription.map((description, index) => (
-        <>
-          <Typography style={{ marginBottom: "10px" }} variant="body2">
-            {description}
-          </Typography>
-        </>
+        <Typography
+          key={index}
+          style={{ marginBottom: "10px" }}
+          variant="body2"
+        >
+          {description}
+        </Typography>
       ))}
     </CardContent>
   </React.Fragment>
