@@ -55,7 +55,7 @@ const About = () => {
         </div>
         <Bounce left delay={4000}>
           <Shake delay={5000}>
-            <p className="title">A software engineer</p>
+            <p className="title">I'm a software engineer</p>
           </Shake>
         </Bounce>
         <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
