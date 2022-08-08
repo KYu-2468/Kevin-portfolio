@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Bounce, Zoom } from "react-reveal";
+import { Zoom } from "react-reveal";
 import Shake from "react-reveal/Shake";
 
 const About = () => {
@@ -52,13 +52,11 @@ const About = () => {
             </div>
           </Zoom>
         </div>
-        {/* <Bounce left delay={4000}> */}
         <Shake delay={5000}>
           <p className="title" style={{ textAlign: "center" }}>
             Software Engineer
           </p>
         </Shake>
-        {/* </Bounce> */}
         <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
           I enjoy building fun and interactive apps to connect businesses with
           customers. I'm experienced in frontend and backend development. Let me

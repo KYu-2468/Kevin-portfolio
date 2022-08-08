@@ -63,6 +63,15 @@ body {
   background-color: #313638;
 }
 
+.navbar {
+  position: fixed;
+  align-items: center;
+  top: 0px;
+  width: 100vw;
+  background-color: #282c34;
+  z-index: 99;
+}
+
 .logo {
   display: flex;
   margin: 5px;
@@ -145,19 +154,19 @@ body {
 @media only screen and (min-width: 601px) {
   .education > div {
     display: flex;
-    margin-top: 50px;
+    margin: 25px;
+  }
+  .projects > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .project {
+    margin-top: 30px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar {
-    position: fixed;
-    align-items: center;
-    top: 0px;
-    width: 100vw;
-    background-color: #282c34;
-    z-index: 99;
-  }
   .navbar div {
     flex-grow: 1;
   }
@@ -172,9 +181,12 @@ body {
 
   .projects > div > div {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project {
     margin-left: auto;
     margin-right: auto;
+    margin-top: 30px;
   }
 }
