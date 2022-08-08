@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Bounce, Flip, Zoom } from "react-reveal";
+import { Bounce, Zoom } from "react-reveal";
 import Shake from "react-reveal/Shake";
 
 const About = () => {

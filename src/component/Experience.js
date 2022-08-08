@@ -6,7 +6,6 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -17,13 +16,6 @@ const Experience = ({ jobs }) => (
   <div className="experience">
     <TableContainer component={Paper}>
       <Table aria-label="collapsible table">
-        <TableHead>
-          <TableRow>
-            <TableCell />
-            <TableCell>Company</TableCell>
-            <TableCell align="right">Role</TableCell>
-          </TableRow>
-        </TableHead>
         <TableBody>
           {jobs.map((job, index) => (
             <Row key={index} job={job} />
@@ -52,9 +44,8 @@ const Row = ({ job }) => {
           </IconButton>
         </TableCell>
         <TableCell component="th" scope="row">
-          {job.company}
+          {job.company} {<br />} {job.role}
         </TableCell>
-        <TableCell align="right">{job.role}</TableCell>
       </TableRow>
       <TableRow>
         <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={6}>
