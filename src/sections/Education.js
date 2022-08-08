@@ -13,19 +13,21 @@ const Education = () => {
   return (
     <div id="education">
       <div className="section education">
-        <Zoom>
-          <h1>Education:</h1>
-          <School
-            school="Fullstack Academy"
-            description={fullstackDes}
-            image={fullstackCert}
-          />
-          <School
-            school="Google Data Analytics"
-            description={googleDataDes}
-            image={googleDataCert}
-          />
-        </Zoom>
+        <h1>Education:</h1>
+        <div>
+          <Zoom>
+            <School
+              school="Fullstack Academy"
+              description={fullstackDes}
+              image={fullstackCert}
+            />
+            <School
+              school="Google Data Analytics"
+              description={googleDataDes}
+              image={googleDataCert}
+            />
+          </Zoom>
+        </div>
       </div>
     </div>
   );

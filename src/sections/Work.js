@@ -67,7 +67,9 @@ const Work = () => {
     <div id="experience">
       <div className="section experience">
         <h1>Experiences:</h1>
-        <Experience jobs={jobs} />
+        <div>
+          <Experience jobs={jobs} />
+        </div>
       </div>
     </div>
   );

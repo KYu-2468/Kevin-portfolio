@@ -10,18 +10,34 @@ const Projects = () => {
       description: "An ecommerce website that sells toys",
       image: toyShop,
     },
+    {
+      name: "Toy Shop",
+      description: "An ecommerce website that sells toys",
+      image: toyShop,
+    },
+    {
+      name: "Toy Shop",
+      description: "An ecommerce website that sells toys",
+      image: toyShop,
+    },
+    {
+      name: "Toy Shop",
+      description: "An ecommerce website that sells toys",
+      image: toyShop,
+    },
   ];
 
   return (
     <div id="projects">
       <div className="section projects">
-        <Zoom>
-          <h1>Projects:</h1>
-
-          {projects.map((project) => (
-            <Project key={project.name} project={project} />
-          ))}
-        </Zoom>
+        <h1>Projects:</h1>
+        <div>
+          <Zoom>
+            {projects.map((project, index) => (
+              <Project key={index} project={project} />
+            ))}
+          </Zoom>
+        </div>
       </div>
     </div>
   );

@@ -12,13 +12,16 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   });
 
-  if (width > 500) {
+  if (width > 600) {
     return (
       <div className="navbar">
         <div className="logo">
           <img src={kevinImg} alt="Kevin" />
         </div>
-        <Menu />
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
       </div>
     );
   } else {

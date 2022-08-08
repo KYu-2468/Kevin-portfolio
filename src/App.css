@@ -63,6 +63,15 @@ body {
   background-color: #313638;
 }
 
+.navbar {
+  position: fixed;
+  align-items: center;
+  top: 0px;
+  width: 100vw;
+  background-color: #282c34;
+  z-index: 99;
+}
+
 .logo {
   display: flex;
   margin: 5px;
@@ -103,8 +112,11 @@ body {
   font-weight: bold;
 }
 
-.experience {
+.experience > div {
   width: 90%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 .experience th,
 .experience td {
@@ -120,29 +132,39 @@ body {
 .navbar {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
-.navbar a {
-  color: red;
-  border: solid;
-  text-decoration: none;
-  margin-top: 10px;
-  padding: 7px;
-  font-size: 1.5rem;
+.school {
+  width: 80%;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 345px;
 }
 
-@media only screen and (min-width: 501px) {
-}
-
-@media only screen and (max-width: 500px) {
-  .navbar {
-    position: fixed;
-    align-items: center;
-    top: 0px;
-    width: 100vw;
-    background-color: #282c34;
-    z-index: 99;
+@media only screen and (min-width: 601px) {
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
   }
+
+  .education > div {
+    display: flex;
+    margin: 25px;
+  }
+  .projects > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .project {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   .navbar div {
     flex-grow: 1;
   }
@@ -157,16 +179,12 @@ body {
 
   .projects > div > div {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .project {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .school {
-    width: 80%;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 30px;
   }
 }
