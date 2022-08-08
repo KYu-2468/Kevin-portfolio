@@ -30,7 +30,7 @@ const Work = () => {
     },
     {
       company: "SGS",
-      role: "SWE Intern",
+      role: "Software Engineer Intern",
       startDate: "Jan 2019",
       endDate: "Aug 2020",
       jobDescription: [
@@ -64,9 +64,11 @@ const Work = () => {
   ];
 
   return (
-    <div id="work" className="section">
-      <h1>Experiences:</h1>
-      <Experience jobs={jobs} />
+    <div id="experience">
+      <div className="section experience">
+        <h1>Experiences:</h1>
+        <Experience jobs={jobs} />
+      </div>
     </div>
   );
 };

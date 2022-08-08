@@ -12,12 +12,14 @@ const Projects = () => {
   ];
 
   return (
-    <div id="projects" className="section projects">
-      <h1>Projects:</h1>
-      <div>
-        {projects.map((project) => (
-          <Project key={project.name} project={project} />
-        ))}
+    <div id="projects">
+      <div className="section projects">
+        <h1>Projects:</h1>
+        <div>
+          {projects.map((project) => (
+            <Project key={project.name} project={project} />
+          ))}
+        </div>
       </div>
     </div>
   );

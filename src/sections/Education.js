@@ -11,20 +11,22 @@ const Education = () => {
     "Get professional training designed by Google and have the opportunity to connect with top employers.";
 
   return (
-    <div id="education" className="section">
-      <Zoom>
-        <h1>Education:</h1>
-        <School
-          school="Fullstack Academy"
-          description={fullstackDes}
-          image={fullstackCert}
-        />
-        <School
-          school="Google Data Analytics"
-          description={googleDataDes}
-          image={googleDataCert}
-        />
-      </Zoom>
+    <div id="education">
+      <div className="section education">
+        <Zoom>
+          <h1>Education:</h1>
+          <School
+            school="Fullstack Academy"
+            description={fullstackDes}
+            image={fullstackCert}
+          />
+          <School
+            school="Google Data Analytics"
+            description={googleDataDes}
+            image={googleDataCert}
+          />
+        </Zoom>
+      </div>
     </div>
   );
 };

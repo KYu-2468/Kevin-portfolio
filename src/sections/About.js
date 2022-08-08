@@ -41,11 +41,10 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="section">
-      <div className="intro">
+    <div id="about">
+      <div className="section intro">
         <p>{greet}</p>
-        <p style={{ textIndent: "20px" }}>{intro}</p>
-
+        <p>{intro}</p>
         <div>
           <Zoom delay={3000}>
             <div>
