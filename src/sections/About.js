@@ -49,13 +49,13 @@ const About = () => {
         <div>
           <Zoom delay={3000}>
             <div>
-              <p className="glow">Kevin</p>
+              <p className="glow">KEVIN</p>
             </div>
           </Zoom>
         </div>
         <Bounce left delay={4000}>
           <Shake delay={5000}>
-            <p className="title">I'm a software engineer</p>
+            <p className="title">Software Engineer</p>
           </Shake>
         </Bounce>
         <p style={{ textIndent: "20px", border: "solid", padding: "10px" }}>
