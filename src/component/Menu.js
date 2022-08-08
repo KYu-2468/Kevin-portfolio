@@ -71,7 +71,7 @@ const Menu = () => {
     <div className="menu">
       <React.Fragment key={anchor}>
         <Button onClick={toggleDrawer(anchor, true)}>
-          <MenuIcon />
+          <MenuIcon style={{ color: "#C5C6D0" }} />
         </Button>
         <Drawer
           anchor={anchor}
